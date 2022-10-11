@@ -10,22 +10,6 @@ body {
   background-image: url("media/greycarglitch.jpg")
 }
 
-h1 {
-  color:#3678cf;
-  text-align:center;
-  font-size: 100px;
-  background-image:url("media/paintflag.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  border-color: black;
-  border-width: 10px;
-  border-style: dotted;
-  border-radius: 30px;
-  padding:10px;
-  margin: 10px;
-}
-
 p {
   color:#1d8ebf;
 }
@@ -38,19 +22,26 @@ a:visited {
   color: maroon;
 }
 
-@keyframes bounce {
-  0% {
-    top: 0px;
-    opacity: 0.0;
-  }
-  50% {
-    top: 300px;
-    opacity: 1.0;
-  }
-  100% {
-    top: 400px;
-    opacity: 0.0;
-  }
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 70px 0;
+}
+
+#welcome {
+  color:#3678cf;
+  text-align:center;
+  font-size: 100px;
+  background-image:url("media/paintflag.jpg");
+  background-size: contain;
+  border-color: black;
+  border-width: 10px;
+  border-style: dotted;
+  border-radius: 30px;
+  padding:10px;
+  margin: 10px;
 }
 
 #window {
@@ -69,12 +60,81 @@ a:visited {
   background-color: red;
 }
 
+#handwriting {
+  position: absolute;
+  top: 500px;
+  left: 200px;
+}
 
+#audio {
+  position: absolute;
+  bottom: 10px;
+  right: 100px;
+}
 
-#welcome {
-  font-size: 100px;
+#center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
 }
 
 .rhizome {
   font-size: 50px;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+    opacity: 0.0;
+  }
+  50% {
+    top: 300px;
+    opacity: 1.0;
+  }
+  100% {
+    top: 400px;
+    opacity: 0.0;
+  }
 }

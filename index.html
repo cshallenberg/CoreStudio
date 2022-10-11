@@ -1,25 +1,24 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap"rel="stylesheet">
     <title>Core Demo</title>
   </head>
+  
   <body>
     <h1 id="welcome">hello world</h1>
+    
     <a class="rhizome" href ="window.html">open the window</a>
+    
     <div id="window">
       <img src="media/window.png" alt="window" width="200px">
       <p>This is a window!</p>
     </div>
     
-    <a href="door.html"><img src="media/handwritten_text.jpg" alt="handwritten text as link" width="200px"></a>
-
-    <iframe src="media/silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-    <audio autoplay controls>
-    <source src="media/theta.mp3" type="audio/mp3">
+    <a href="door.html" id="handwriting"><img src="media/handwritten_text.jpg" alt="handwritten text as link" width="200px"></a>
+    
+    <audio autoplay controls id="audio">
+      <source src="media/theta.mp3" type="audio/mp3">
     </audio>
-
-</body>
-
+  </body>
 </html>
